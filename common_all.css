@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*
+article {
+ word-break: break-all;
+}*/
+
+.banner {
+ position: relative;
+ width: 100%;
+ margin: 0 0 30px;
+}
+
+@media screen and (max-width: 667px){
+.banner {
+ position: relative;
+ width: 100%;
+padding: 10px 0 0 0;
+margin: 0;
+ }
+ 
+}
+.sj_news .tw {
+ width: 100%;
+    box-sizing: border-box;
+}
+
+.sj_news h3 {
+ margin-bottom: 0;
+}
+
+
+/*最新情報*/
+
+#jumpnews .latestNews ul li {
+ width: 100%;
+ margin-bottom: 0px;
+ border-bottom: 1px solid #ccc;
+ padding: 10px 0;
+}
+
+#jumpnews .latestNews ul:first-child li:last-child {
+ border-bottom: 1px solid #ccc;
+}
+
+#jumpnews .latestNews ul li a {
+ display: flex !important;
+ padding: 0;
+ color: #000;
+}
+
+#jumpnews .latestNews ul li a .image {
+ max-width: 100px;
+ min-width: 100px;
+}
+
+#jumpnews .latestNews ul li a .image img {
+ width: 100%;
+ border: 1px solid #ccc;
+}
+
+#jumpnews .latestNews ul li p {
+ margin: 0;
+ padding-left: 1em;
+}
+
+#jumpnews .latestNews ul li p time {
+ display: block;
+ color: #999;
+ font-size: .8em;
+}
+
+
+/*****続きを読む*****/
+
+.continuation {
+ display: block;
+ width: 89%;
+ margin: 30px auto 30px auto;
+ padding: .6em;
+ color: #333;
+ border: 1px solid #ccc;
+ text-align: center;
+}
+
+.continuation:hover {
+ opacity: .8;
+}
+
+article section div.latestNews ul.more {
+ display: none;
+}
+
+
+/*input[type="checkbox"] {
+	display: none;
+}
+input[type="checkbox"] + div {
+	height: 0;
+	overflow: hidden;
+}
+input[type="checkbox"]:checked + div {
+	height: auto;
+	transition-duration:1s;
+}*/
+
+.footerText time {
+ display: block;
+ text-align: right;
+}
+
+.footerText .writer {
+ text-align: right;
+}
+
+.copyright {
+ color: #fff;
+ font-size: .8rem;
+	
+}
+.copyright:after {
+ content: "";
+  display: block;
+  clear: both;
+}
+
+.copyright a:link,.copyright a:visited{
+ color: #fff;
+ font-size: .8rem;
+	text-decoration: underline;
+}
+.copyright span.abj {
+	display: block;
+	margin: 12px 0 0 0;
+}
+.copyright span.abj img {
+	width: 72px;
+	margin: 0 12px 12px 0;
+	padding: 0;
+	float: left;
+
+}
+.copyright span.abj em {
+	display: block;
+	padding: 8px 0 0 0;
+
+}
+br.pc {
+	display: block;
+}
+br.sp {
+	display: none;
+}
+
+

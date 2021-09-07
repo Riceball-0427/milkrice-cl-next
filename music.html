@@ -1,0 +1,217 @@
+
+<!doctype html>
+<html lang="ja">
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="web icon/dug.png">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>しまもとのほーむぺーじ</title>
+        <style>
+            body {
+                background-color: black;
+                font-family: 'Kiwi Maru', sans-serif;
+                font-size: 20px;
+            }
+
+            h1 {
+                color: white;
+            }
+
+            a {
+                font-size: 24px;
+            }
+
+            dl{
+                margin: 25px 200px;
+            }
+
+            dd{
+                color: white;
+                font-size: 40px;
+            }
+
+            dt{
+                padding: center;
+            }
+
+            article{
+                background-color: #f3efe7;
+            }
+
+            #music{
+                margin: 20px 150px;
+            }
+
+            #okini{
+                color: darkslategray;
+                font-size: 40px;
+                text-align: center;
+            }
+
+            #title{
+                color: black;
+            }
+
+            .youtube {
+                width: 100%;
+                aspect-ratio: 16 / 9;
+            }
+
+            .youtube iframe {
+                width: 100%;
+               height: 100%;
+            }
+
+            .layer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                color: black;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                transition: transform .4s;
+                transform: 
+                perspective(800px) 
+                scale(1) 
+                translateX(0)
+                rotateY(0);
+                transform-style: preserve-3d;
+
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="px-3 pt-3">
+            <h1>しまもとのほーむぺーじ</h1>
+            </div>
+        </header>
+   
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=DotGothic16&family=Kiwi+Maru&family=Potta+One&family=Stick&family=Train+One&family=Yusei+Magic&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <nav class="navbar navbar-light" style="background-color: #ffffff;">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="index.html#like">like</a>
+                        <a class="nav-item nav-link" href="manga.html">manga</a>
+                        <a class="nav-item nav-link" href="game.html">game</a>
+                        <a class="nav-item nav-link active" href="#music.html">music</a>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+
+        <h1>しまもとのお気に入りの曲とか</h1>
+        <div class="wrapper" id="music">
+            <article>
+                <div class="banner"><p style="text-align: center;"><a id="okini">おすすめの再生リスト</a></p></div>
+                <section>
+                    <dl>
+                        <dd id="title">
+                            まらしぃさんのピアノ　13周年記念
+                        </dd>
+                        <dt>
+                            <div  class="youtube">
+                                <iframe width="1060" height="590" src="https://www.youtube.com/embed/94sxLOf6Lh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </dt>            
+                    </dl>
+
+                    <dl>
+                        <dd id="title">
+                            しまもとおすすめの再生リスト
+                        </dd>
+                        <dt>
+                            <div  class="youtube">
+                                <iframe width="1060" height="590" src="https://www.youtube.com/embed/videoseries?list=PL6nx7QK0LiMVvQseSwG8EBomcO6wljzah" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </dt>
+                    </dl>
+                </section>
+                <div class="banner"><p style="text-align: center;"><a id="okini">おすすめのアーティスト</a></p></div>
+                <section>
+                    <dl>
+                        <dd id="title">
+                            ヨルシカのホームページ
+                        </dd>
+                        <dt>
+                            <div  class="youtube">
+                                <iframe width="1060" height="650" src="https://yorushika.com/" title="yorushika" frameborder="0"></iframe>
+                            </div>
+                        </dt>
+                    </dl>
+
+                    <dl>
+                        <dd id="title">
+                            YOASOBIのホームページ
+                        </dd>
+                        <dt>
+                            <div  class="youtube">
+                                <iframe width="1060" height="650" src="https://www.yoasobi-music.jp/" title="YOASOBI" frameborder="0"></iframe>
+                            </div>
+                        </dt>
+                    </dl>
+
+                    <dl>
+                        <dd id="title">
+                            OrangestarのTwitter
+                        </dd>
+                        <dt>
+                            <div  class="youtube">
+                                <a class="twitter-timeline" href="https://twitter.com/MikanseiP?ref_src=twsrc%5Etfw">Tweets by MikanseiP</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </div>
+                        </dt>
+                    </dl>
+
+                    <dl>
+                        <dd id="title">
+                            まらしぃのホームページ
+                        </dd>
+                        <dt>
+                            <div  class="youtube">
+                                <iframe width="1060" height="650" src="https://marasy8.jp/" title="marasy8" frameborder="0"></iframe>
+                            </div>
+                        </dt>
+                    </dl>
+
+                </section>
+
+
+                <p style="text-align: center;"><a id="okini">以上、まだまだあるけどおしまい！</a></p>
+            </article>
+        </div>
+    </body>
+    <!--
+                           <dl>
+                        <dd id="title">
+                            title
+                        </dd>
+                        <dt>
+                            <div  class="youtube">
+                                <iframe width="1060" height="650" src="https://www.yoasobi-music.jp/" title="YOASOBI" frameborder="0"></iframe>
+                            </div>
+                        </dt>
+                    </dl>
+    -->
+</html>

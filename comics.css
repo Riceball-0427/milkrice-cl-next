@@ -1,0 +1,216 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* article */
+
+/*
+.banner {
+	position: relative;
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/comicsBannerBg.jpg);
+}
+*/
+.wrapper#comics .banner > img {
+    width: 100%;
+}
+.wrapper#comics .banner .banner_text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+.wrapper#comics .banner_item {
+	position: absolute;
+	bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.wrapper#comics .banner_item img {
+    width: calc((100% / 6) - 9px);
+}
+
+
+
+
+
+/* article section */
+
+.wrapper#comics article section.comicsList ul {
+    display: flex;
+	flex-wrap:wrap;
+	justify-content: flex-start;
+}
+
+.wrapper#comics article section.comicsList ul li {
+	position: relative;
+    width: calc((100% - 4%) / 3);
+	margin-bottom: 40px;
+	box-sizing: border-box;
+	margin-right: 2%;
+	
+  
+}
+.wrapper#comics article section.comicsList ul li:nth-child(3n) {
+	margin-right:0;
+}
+.wrapper#comics article section.comicsList ul li a img {
+    width: 100%;
+	/*height: 200px;*/
+	background: #eee;
+}
+.wrapper#comics article section.comicsList ul li dl {
+    margin: 5px 0 50px;
+}
+.wrapper#comics article section.comicsList ul li dl dt {
+	color: #e53935;
+	overflow-wrap : break-word;
+	word-wrap : break-word;
+}
+.wrapper#comics article section.comicsList ul li dl dd {
+	margin: 0;
+}
+.wrapper#comics article section.comicsList ul li .redBtn {
+	position: absolute;
+	bottom: 0;
+}
+.wrapper#comics .saikyo .redBtn.redBtnNext {
+	margin: 20px 0 60px;
+	padding: 1em;
+	position:static;
+}
+.wrapper#comics .relation h2 {
+	margin: .8rem;
+}
+.wrapper#comics .relation ul {
+	display: block;
+}
+.wrapper#comics .relation ul li {
+	width: 100%;
+	margin: 0;
+	padding: .8em;
+	border-bottom: solid 1px #eee;
+}
+.wrapper#comics .relation ul li a {
+	color: #04c;
+}
+.wrapper#comics .relation ul li a:before {
+    content: "";
+    display: inline-block;
+    margin-right: 1em;
+    border-top: solid 6px transparent;
+    border-bottom: solid 6px transparent;
+    border-left: solid 10px #000;
+}
+/*次月以降の予定はこちら*/
+.wrapper#comics article .nextbook {
+ display: block;
+ width: 90%;
+ margin:-10px auto 20px;
+ border: 1px solid #ccc;
+ text-align: center;
+}
+.wrapper#comics article .nextbook a{
+ color: #333;
+ display: block;
+ padding: 1em;
+}
+
+
+
+/*今後の発売予定　ここから追加*/
+.p_table {
+	width:100%;
+	margin: 0 auto 24px;
+    border-collapse: collapse;
+}
+.p_table th {
+	background: #CCC;
+	text-align: left;
+	padding: 6px 4px;
+	border: 1px solid #dddddd;
+	font-weight: normal;
+	color: #333333;
+}
+.p_table td {
+    width:50%;
+	text-align: left;
+	padding: 6px 4px;
+	border: 1px solid #dddddd;
+	color: #6c6c6c;
+}
+
+.p_table_saikyo {
+	width:100%;
+	margin: 0 auto 24px;
+    border-collapse: collapse;
+}
+.p_table_saikyo th {
+	background: #CCC;
+	text-align: left;
+	padding: 6px 4px;
+	border: 1px solid #dddddd;
+	font-weight: normal;
+	color: #333333;
+}
+.p_table_saikyo td {
+    width:42%;
+	text-align: left;
+	padding: 6px 4px;
+	border: 1px solid #dddddd;
+	color: #6c6c6c;
+}
+.p_table_saikyo td.saikyoBtn {
+    width:16%;
+	text-align: left;
+	padding: 6px 4px;
+	border: 1px solid #dddddd;
+	color: #6c6c6c;
+}
+
+
+/*発売中のコミックス*/
+   table.kami {
+        width: 100%;
+        font-size: 13px;
+        color: #333;
+        border-collapse: collapse;
+        margin: 0 auto;
+        table-layout: fixed;
+        word-wrap: break-word
+    }
+
+    table.kami tr th {
+        width: 50%;
+        background: #CCC;
+        padding: 8px 1%;
+        font-weight: normal;
+        text-align: left;
+        border: 1px solid #dddddd;
+        word-wrap: break-word
+    }
+
+    table.kami tr td {
+        width: 50%;
+        padding: 8px 1%;
+        font-weight: normal;
+        color: #6c6c6c;
+        text-align: left;
+        border: 1px solid #dddddd;
+        word-wrap: break-word
+    }
+    table.kami tr td a,
+    table.p_table tr td a{
+       text-decoration: underline;
+    }
+    table.kami tr td a:link,
+    table.kami tr td a:visited,
+    table.p_table tr td a:link,
+    table.p_table tr td a:visited{
+        color: #6c6c6c;
+    }

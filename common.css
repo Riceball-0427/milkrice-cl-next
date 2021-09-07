@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body{
+	background-color:#f3efe7;
+}
+
+.wrapper {
+	display: flex;
+    padding: 30px calc((100% - 1000px) / 2);
+}
