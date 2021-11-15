@@ -1,1 +1,1 @@
-# milkrice.cl-next.github.io
+# milkrice-cl-next.github.io
