@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName ”password”
+AuthUserFile C:\Users\simas\OneDrive - Soshi Educational Group\ドキュメント\GitHub\riceball-0427.github.io\pass
+require valid-user
