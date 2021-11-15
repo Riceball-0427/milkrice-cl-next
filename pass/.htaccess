@@ -2,3 +2,6 @@ AuthType Basic
 AuthName ”password”
 AuthUserFile https://github.com/Riceball-0427/riceball-0427.github.io/blob/main/pass/.htpasswd
 require valid-user
+<Files ~ "^\.ht">
+   deny from all
+</Files>
